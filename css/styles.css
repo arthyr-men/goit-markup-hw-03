@@ -12,6 +12,7 @@
        display: flex;
       align-items: center;}
   .menu-nav-header {
+    padding-left: 76px;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -47,16 +48,19 @@
         color: var(--title-text-color);
         text-transform: uppercase;
       }
-      .logo-class-portfolio{
-       
+      .logo-class-portfolio
+      {
+        
         font-family: var(--secondery-font);
-        font-weight: 800 ;
+        font-style: normal;
+        font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        text-transform: uppercase ;
-        color: #4d5ae5;
-        padding-right: 76px;
+        color: var(--primary-brand-color);
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
       }
       .nav-logo-class{ 
         display: flex;
@@ -184,25 +188,27 @@
                  
              /*section-3*/
             .section-2 {
-  }  
+              padding-bottom: 120px;
+             }  
             /*what-are-we-doing*/
-            .what-are-we-doing {
-              text-align: center;
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 36px;
-              letter-spacing: 0.02em;
-              line-height: 40px;
-              line-height: 1.11;
-              
-              text-transform: capitalize;
-              color: #2E2F42;
-    }    
-    .img-1 {display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px;
+      .what-are-we-doing
+             {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        text-transform: capitalize;
+        margin-bottom: 72px;
+        color:var(--title-text-color);
+            } 
+            .what-are-list{
+              display: flex;
+              flex-wrap: wrap;
+              gap: 24px;}   
+    .img-1-2-3 {  
+      flex-basis: calc((100% - 48px) / 3);
      
       } 
       .rectangle-71 {
@@ -213,22 +219,14 @@
         border: 1px solid #E7E9FC;
         flex: none;
         order: 0;
-        flex-grow: 0;}  
-        .img-2 {display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 0px;
-
-      } 
-
-        .img-3{display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 0px;
-        }   
-        /*section-4*/
+        flex-grow: 0;
+      }  
+         /*section-4*/
+       
         .section-our-team {
-        background: #F4F4FD;
+          background-color: var(--background-section-color);
+          padding-top: 120px;
+          padding-bottom: 120px;
        
         }
         .our-team-container{  
@@ -237,30 +235,17 @@
           padding-bottom: 32px;
           padding-left: 16px;
           border-radius: 0px 0px 4px 4px;}
-         .our-team-one {
-           padding-left: 0;
-           font-family: 'Roboto';
-           font-style: normal;
-           font-weight: 700;
-           font-size: 36px;
-           line-height: 40px;
-           text-align: center;
-           line-height: 1.11;
-           letter-spacing: 0.02em;
-           text-transform: capitalize;
-           color: #2E2F42;
-         }
+         
 
           .team-card-one {
-           background-color: #FFFFFF;
-           margin: 0;
+            background-color: var(--background-white-color);
+            flex-basis: calc((100% - 72px) / 4);
          }
 
           .ul-our-team-one{
-             align-items: center;
-             gap: 32px;
-             background: #FFFFFF;
-             border-radius: 0px 0px 4px 4px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
           }
           .img-mark {
             background: url(man-with-laptop-presenting-something.jpg);
@@ -281,35 +266,17 @@
           order: 0;
           flex-grow:0;}
         
-        
-            .img-tom {
-              background: url(img-2.jpg);
-              mix-blend-mode: normal;
-              flex: none;
-              order: 0;
-              flex-grow: 0;}
           
-            .frontend-developer-text {
-              font-family: 'Roboto';
-              font-style: normal;
+            .frontend-developer-text
+             {
               font-weight: 400;
               font-size: 16px;
-              line-height: 24px;
-             
+              line-height: 1.5;
               letter-spacing: 0.02em;
-              color: #434455;
-              flex: none;
-              order:1;
-              flex-grow:0;}
-  
-        .img-camila {
-             background: url(young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg);
-             mix-blend-mode: normal;
-             flex: none;
-             order: 0;
-           flex-grow: 0;} 
-
-         .marketing {
+              color: var(--body-text-color);
+              text-align: center;
+            }
+           .marketing {
              font-family: 'Roboto';
              font-style: normal;
             font-weight: 400;
@@ -320,53 +287,48 @@
             color: #434455;
             flex: none;
             order: 1;
-           flex-grow: 0;}  
+           flex-grow: 0;
+          }  
    
-    .img-daniel {
-      background: url(confident-handsome-guy-posing-against-white-wall.jpg);
-      mix-blend-mode: normal;
-      flex: none;
-      order: 0;
-      flex-grow: 0;}
+          /*footer*/
    
-      /*footer*/
-     .footer-class-portfolio{
-       background-color: #2e2f42;}
+      
+     .footer-class-portfolio {
+      background: var(--background-dark-color);
+      padding-top: 100px;
+      padding-bottom: 100px;
+      }
+      .footer-class-container{}
   
     .logo-footer-class-portfolio
     {
-      font-family: "Raleway",sans-serif;
-      font-weight: 800 ;
+      font-family: var(--secondery-font);
+      font-style: normal;
+      font-weight: 800;
       font-size: 18px;
       line-height: 1.17;
       letter-spacing: 0.03em;
-      text-transform: uppercase ;
-      color: #4d5ae5;
+      color: var(--primary-brand-color);
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 16px;
 
      }
-     .footer-text-portfolio{
-      font-family: 'Roboto';
+     .footer-text-portfolio
+     {
+       
        font-style: normal;
        font-weight: 400;
        font-size: 16px;
-       line-height: 24px;
-      letter-spacing: 0.02em;
-      color: #F4F4FD;
+       line-height: 1.5;
+       letter-spacing: 0.02em;
+       color: var(--background-section-color);
+       width: 264px;
      }
 
-   /* ------portfolio ------*/
-     
-       .body-2{
-      
-    
-    
-
-         font-family: "Roboto",
-         sans-serif;
-         color:var(--body-text-color);
-         background:var(--background-white-color);}
-      /*menu-nav-2*/
-      .top-line-nav-ul{
+        /* ------portfolio ------*/
+        .top-line-nav-ul
+        {
          background: #FFFFFF;
          border-bottom: 1px solid #E7E9FC;
          font-family: "Raleway", sans-serif;
@@ -413,11 +375,8 @@
           color: #434455;}
           /*section-filters*/
           .content-portfolio{
-            
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 24px;
+              padding-top: 96px;
+              padding-bottom: 72px;
             }
             .contacts-address-list-van{
               font-size: 16px;
@@ -434,39 +393,35 @@
               }
           
             .portfolio-btn-list{
-              display: flex;
-              flex-direction: row;
-              align-items: flex-start;
-                padding: 12px 24px;
-               
-                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-                border-radius: 4px;
-                flex: none;
-                order: 0;
-                flex-grow: 0;}
+              }
 
-            .ortfolio-button hover, 
-            .ortfolio-button:focus{
-              color: #FFFFFF }
+            .portfolio-button hover, 
+            .portfolio-button:focus{
+              color: var(--background-white-color);
+              background-color: var(--pressed-state-color);
+              border: 1px solid transparent}
           .portfolio-button{
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             font-size: 16px;
-            line-height: 1.5 ;
+            line-height: 1.5;
             letter-spacing: 0.04em;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-             padding: 12px 24px;
-             background: #F4F4FD;
-             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-            border-radius: 4px;
-            flex: none;
-            order: 0;
-            flex-grow: 0;
+            color: var(--primary-brand-color);
+            background: var(--background-section-color);
+            align-items: center;
             cursor: pointer;
+            display: block;
+            border: 1px solid #e7e9fc;
+            border-radius: 4px;
+            padding: 12px 24px;
+            
             }
-          
+
+          .taxi-five-box-list{
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 48px;}
          
           .marketing-text{
             font-family: 'Roboto';
@@ -492,46 +447,39 @@
      
         
       .menu-nav-list{
-     
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 72px;
       }
    
            
-  .banking-text-five{
-    font-family: 'Roboto';
-    font-style: normal;
+  .banking-text-five
+  {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
-    flex: none;
-    order: 0;
-    flex-grow: 0;}
-  .five-marketing-text{
-   font-family: 'Roboto';
-    font-style: normal;
+    color: var(--title-text-color);
+    margin-bottom: 8px;}
+  .five-marketing-text
+  {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    flex: none;
-    order: 1;
-    flex-grow: 0;}
+    color: var(--body-text-color);}
   
     .taxi-five-box{
-      
-      background: #FFFFFF;
-      border: 1px solid #E7E9FC;}
+
+      flex-basis: calc((100% - 144/9));
+    }
  
       
       .box-text-five{
-        display: flex;
-       flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0px 16px;
-      gap: 8px;
+      
        }
       
   .portfolio-button {
@@ -554,13 +502,21 @@
      
   .footer-class-portfolio
     {
-   
-     background-color: #2E2F42;
+     background: var(--background-dark-color);
+     padding-top: 100px;
+     padding-bottom: 100px;
      }
        
 
       .stydio-footer-color{
-        color: #f4f4fd;
+        font-family: var(--secondery-font);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--background-section-color);
+        text-transform: uppercase;
       }
       .link{ text-decoration: none;}
       .link:hover, .link:focus {
