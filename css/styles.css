@@ -50,7 +50,7 @@
       }
       .logo-class-portfolio
       {
-        
+        margin-right: 76px;
         font-family: var(--secondery-font);
         font-style: normal;
         font-weight: 800;
@@ -158,7 +158,7 @@
         gap: 24px;
     }
      
-      .feature-1-feature { 
+      .feature-li-feature { 
          
             width: calc((100% - 72px) / 4);
            
@@ -187,7 +187,7 @@
            
                  
              /*section-3*/
-            .section-2 {
+            .section-three {
               padding-bottom: 120px;
              }  
             /*what-are-we-doing*/
@@ -259,12 +259,14 @@
           font-weight: 500;
           font-size: 20px;
           line-height: 24px;
-         
+          text-align: center;
           letter-spacing:0.02em;
           color: #2E2F42;
           flex:none;
           order: 0;
-          flex-grow:0;}
+          flex-grow:0;
+          margin-bottom: 8px;
+        }
         
           
             .frontend-developer-text
@@ -374,9 +376,12 @@
           letter-spacing: 0.02em;
           color: #434455;}
           /*section-filters*/
-          .content-portfolio{
-              padding-top: 96px;
-              padding-bottom: 72px;
+          .content-portfolio
+          {
+            padding: 96px 0 120px;
+            padding-bottom: 120px;
+            padding-top: 96px;
+
             }
             .contacts-address-list-van{
               font-size: 16px;
@@ -399,7 +404,7 @@
             .portfolio-button:focus{
               color: var(--background-white-color);
               background-color: var(--pressed-state-color);
-              border: 1px solid transparent}
+              border: 1px solid transparent;}
           .portfolio-button{
             font-family: "Roboto", sans-serif;
             font-weight: 500;
@@ -442,7 +447,12 @@
            background: #FFFFFF;
            border: 1px solid #E7E9FC;}
     
-      
+      .container-photo{
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+        margin-bottom: 8px;
+      }
 
      
         
